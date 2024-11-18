@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>عداد النقرات</title>
+</head>
+<body>
+    <button  onclick="increment()">اضغط هنا</button>
+    <p id="">0</p>
+    <span id=""  >0</span>
+    <label id="counter" name="rondd" class="btnn">0</label>
+<img >
+
+    <script>
+        function increment() {
+            // الحصول على العنصر الذي يحمل الـ id "counter"
+            var counter = document.getElementById("counter");
+            // تحويل قيمة العنصر إلى عدد صحيح وإضافة 1
+            counter.textContent = parseInt(counter.textContent) + 1;
+        }
+    </script>
+</body>
+</html>
